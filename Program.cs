@@ -332,6 +332,7 @@
     //}
     #endregion
 
+
     static void Main(string[] args)
     {
         #region Tek çift random sayılar
@@ -468,7 +469,305 @@
         //Console.WriteLine(yas);
         #endregion
 
+        #region Word Counter
 
+        //Console.WriteLine("Enter your sentence: ");
+        //string text = Console.ReadLine();
+        //Console.WriteLine(text + "\n");
+        //string list = "AEOUI";
+
+        //string textUpper = text.ToUpper();
+        //int sayac = 0;
+        //for (int i = 0; i < textUpper.Length; i++)
+        //{
+        //    if (list.Contains(textUpper[i]))
+        //        sayac++;
+        //}
+        //Console.WriteLine("Yukarıdaki girdiğiniz - {0} - cümlesinde {1} adet sesli harf vardır", textUpper, sayac);
+        #endregion
+
+        #region Calculator withour division incrementor (TAMAMLANMADI)
+        //Console.WriteLine("enter your number that you want to divide: ");
+        //int number = Convert.ToInt32(Console.ReadLine());
+        //Console.WriteLine("enter number that make dividing: ");
+        //int div = Convert.ToInt32(Console.ReadLine());
+        //int sayac = 0;
+        //for (int i = number; i >= 0; i -= div)
+        //{
+
+
+
+        //    if (i < div)
+        //    {
+        //        int kalan = i;
+        //        Console.WriteLine("kalan sayı {0}", kalan);
+        //        break;
+
+        //    }
+        //    sayac++;
+
+        //}
+
+        //Console.WriteLine("your {0} number is contains {1} amount of {2}", number, sayac, div);
+        #endregion
+
+        #region Kare Piramidal Sayılar
+        //int toplam;
+        //Console.WriteLine("N: ");
+        //int n = Convert.ToInt32(Console.ReadLine());
+        //string a;
+
+        //for(int i = 1; i <= n; i++)
+        //{
+        //    toplam = 0;
+        //    for (int j = 1; j <= i; j++)
+        //    {
+        //        toplam += j * j;
+        //        Console.Write(j+"^2");
+        //        if(j != i)
+        //        {
+        //            Console.Write(" + ");
+        //        }
+        //        else
+        //        {
+        //            Console.Write( " = ");
+        //        }
+
+        //    }
+        //    Console.Write(toplam);
+        //    Console.WriteLine("");
+        //}
+        #endregion
+
+        #region DersProgramı class
+        //string k = "*";
+        //int x = 0, y = 3, a = 15;
+
+        //string[,] dizi = {
+        //        { "Pazartesi", "Matematik","Matematik","Edebiyat","Edebiyat","BTT","BTT","ProgTem","ProgTem"},
+        //        { "Salı", "Matematik","Matematik","Edebiyat","Edebiyat","BTT","BTT","ProgTem","ProgTem"},
+        //        { "Çarşamba", "Matematik","Matematik","Edebiyat","Edebiyat","BTT","BTT","ProgTem","ProgTem"},
+        //        { "Perşembe", "Matematik","Matematik","Edebiyat","Edebiyat","BTT","BTT","ProgTem","ProgTem"},
+        //        { "Cuma", "Matematik","Matematik","Edebiyat","Edebiyat","BTT","BTT","ProgTem","ProgTem"},
+        //    };
+        //Console.SetCursorPosition(x, 0);
+        //Console.WriteLine(tekrarla(75, k));
+        //Console.WriteLine("{0} DERS PROGRAMI {0}", tekrarla(30, k));
+        //Console.WriteLine(tekrarla(75, k));
+        //for (int i = 0; i < 5; i++)
+        //{
+        //    for (int j = 0; j < 9; j++)
+        //    {
+        //        Console.SetCursorPosition(x, y);
+        //        Console.Write(k + " ");
+        //        Console.Write(dizi[i, j]);
+        //        y = y + 1;
+        //        if (j == 0)
+        //        {
+        //            Console.SetCursorPosition(x, y);
+        //            Console.Write(k);
+        //            Console.Write(tekrarla(a, k));
+        //            y = y + 1;
+        //        }
+        //    }
+        //    y = 3;
+        //    x = x + a;
+
+        //}
+        //Console.WriteLine();
+        //Console.WriteLine(tekrarla(75, k));
+        //Console.WriteLine(tekrarla(75, k));
+        //for (int i = 0; i < 14; i++)
+        //{
+        //    Console.SetCursorPosition(x - 1, i);
+        //    Console.Write("*");
+        //}
+        //Console.ReadKey();
+        #endregion
+
+        #region Ebebek
+
+        //string name;
+        //double salary;
+        //int hiringYear;
+        //int workingHours;
+
+
+        //Console.WriteLine("Please enter your name: ");
+        //name = Console.ReadLine();
+        //Console.WriteLine("Please enter your salary: ");
+        //salary = Convert.ToInt32(Console.ReadLine());
+        //Console.WriteLine("Please enter your hiring year: ");
+        //hiringYear = Convert.ToInt32(Console.ReadLine());
+        //Console.WriteLine("Please enter your weekly working hours: ");
+        //workingHours = Convert.ToInt32(Console.ReadLine());
+        //Console.Clear();
+
+
+
+        //Console.WriteLine("Mr/Ms {0}; ", name);
+        //raise(salary, hiringYear, workingHours);
+
+
+        #endregion
+
+        #region Fibonacci is finished now
+
+        //int step;
+        //Console.WriteLine("How much step fibonacci series that you want?");
+        //step = Convert.ToInt32(Console.ReadLine());
+        //int a = 1;
+        //int b = 0;
+        //int sonuc;
+        //for (int i = 0; i < step; i++)
+        //{
+        //    sonuc = a + b;
+        //    a = b;
+        //    b = sonuc;
+
+        //    Console.Write(sonuc + ",");
+        //}
+        #endregion
+
+        #region Kelime Sıralama
+        //int adet;
+        //Console.Write("Girilecek Veri Adeti : ");
+        //adet = Convert.ToInt16(Console.ReadLine());
+
+        //Console.WriteLine("---------------------------------------");
+        //string[] liste = new string[adet];
+        //string isim;
+
+        //for (int i = 0; i < adet; i++)
+        //{
+        //    Console.Write(i + 1 + ". İsmi Giriniz: ");
+        //    isim = Console.ReadLine();
+        //    liste[i] = isim;
+        //}
+
+        //Console.WriteLine();
+        //Console.WriteLine("Sıralamadan önce liste:");
+        //Console.WriteLine("---------------------------------------");
+
+        //foreach (string eleman in liste)
+        //{
+        //    Console.WriteLine(eleman);
+        //}
+
+
+        //Array.Sort(liste);
+        //Console.WriteLine();
+        //Console.WriteLine("A-Z Sıralama:");
+        //Console.WriteLine("---------------------------------------");
+
+        //foreach (string eleman in liste)
+        //{
+        //    Console.WriteLine(eleman);
+        //}
+        //Console.WriteLine();
+        //Array.Reverse(liste);
+        //Console.WriteLine("Z-A Sıralama:");
+        //Console.WriteLine("---------------------------------------");
+
+        //foreach (string eleman in liste)
+        //{
+        //    Console.WriteLine(eleman);
+        //}
+
+
+        #endregion
+
+        #region Çarpım Tablosu 2
+        //Console.WriteLine("Çarpım Tablosuna Hoşgeldiniz: ");
+        //int sonuc = 0;
+        //for (int i = 1; i <= 10; i++)
+        //{
+        //    for (int j = 1; j <= 10; j++)
+        //    {
+        //        sonuc = i * j;
+        //        Console.WriteLine("{0} x {1} = {2}", i, j, sonuc);
+        //    }
+        //    Console.WriteLine("--------------------------------------");
+        //}
+        #endregion
+        
+        #region Anagram
+
+        //Console.WriteLine("İlk kelimeyi giriniz: ");
+        //string kelime1 = Console.ReadLine();
+        //Console.WriteLine("İkinci kelimeyi giriniz: ");
+        //string kelime2 = Console.ReadLine();
+
+        //char[] karakter1 = kelime1.ToLower().ToCharArray();
+        //char[] karakter2 = kelime2.ToLower().ToCharArray();
+
+        //Array.Sort(karakter1);
+        //Array.Sort(karakter2);
+
+        //string yeniKelime = new string(karakter1);
+        //string yeniKelime2 = new string(karakter2);
+
+        //if (yeniKelime==yeniKelime2)
+        //{
+        //    Console.WriteLine("Bu kelime anagram");
+        //}
+        //else
+        //{
+        //    Console.WriteLine("değildir");
+        //}
+        #endregion
     }
+    #region EBebek method
+    static void raise(double salary, int hiringYear, int workingHours)
+    {
 
+
+        DateTime nowYear = DateTime.Now;
+        int a = nowYear.Year;
+
+        int workingYear = a - hiringYear;
+
+        if (workingYear == 0 && workingYear <= 5)
+        {
+            salary = salary * 1.1;
+            Console.WriteLine("This is your new salary {0}", salary + bonus(workingHours));
+        }
+        else if (workingYear > 5 && workingYear <= 10)
+        {
+            salary = salary * 1.3;
+            Console.WriteLine("This is your new salary {0}", salary + bonus(workingHours));
+        }
+        else if (workingYear > 10) ;
+        {
+            salary = salary * 1.6;
+            Console.WriteLine("This is your new salary {0}", salary + bonus(workingHours));
+        }
+    }
+    static int bonus(int workingHours)
+    {
+        int prim;
+        if (workingHours == 0 && workingHours <= 45)
+        {
+            prim = 0;
+            Console.WriteLine("priminiz {0} tl'dir", prim);
+        }
+        else
+        {
+            prim = (workingHours - 45) * 30;
+            Console.WriteLine("priminiz {0} tl'dir", prim);
+        }
+        return prim;
+    }
+    #endregion
+    #region DersProgramı metod
+    //static string tekrarla(int sayi, string karakter)
+    //{
+    //    string yazi = "";
+    //    for (int i = 0; i < sayi; i++)
+    //    {
+    //        yazi += karakter;
+    //    }
+    //    return yazi;
+    //}
+    #endregion
 }
