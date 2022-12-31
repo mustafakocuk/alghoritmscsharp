@@ -690,7 +690,7 @@
         //    Console.WriteLine("--------------------------------------");
         //}
         #endregion
-        
+
         #region Anagram
 
         //Console.WriteLine("İlk kelimeyi giriniz: ");
@@ -716,48 +716,218 @@
         //    Console.WriteLine("değildir");
         //}
         #endregion
+
+        #region Kare Çizdirme 
+        //int size = 20;
+
+        //for (int i = 0; i < size; i++)
+        //{
+        //    for (int j = 0; j < size; j++)
+        //    {
+        //        if (i == 0 || i == size - 1 || j == 0 || j == size - 1 || i == j || (i + j) == size - 1)
+        //        {
+        //            Console.Write("* ");
+        //        }
+        //        else
+        //        {
+        //            Console.Write("  ");
+        //        }
+        //    }
+        //    Console.WriteLine();
+        //}
+        #endregion
+
+        #region Üçgen Çizdirme ( DİK)
+
+        //for (int i = 0; i < 20; i++)
+        //{
+        //    string triangle = new String('*', i);
+        //    Console.WriteLine(triangle);
+        //}
+        #endregion
+
+        #region Üçgen Çizdirme ( EŞkenar ) 
+        //for (int i = 0; i < 20; i++)
+        //{
+        //    string startspace = new string(' ', 20-i);
+        //    string space = new String(' ', i);
+        //    Console.WriteLine(startspace +  "*" + space + space + "*");
+        //}
+        //string endLine = new string('*', 40);
+        //Console.Write(endLine);
+        #endregion
+
+        #region Daire
+        //double radius;
+        //double thickness = 0.4;
+        //ConsoleColor BorderColor = ConsoleColor.Red;
+        //Console.ForegroundColor = BorderColor;
+        //char symbol = '*';
+
+        //do
+        //{
+        //    Console.Write("Enter radius:::: ");
+        //    if (!double.TryParse(Console.ReadLine(), out radius) || radius <= 0)
+        //    {
+        //        Console.WriteLine("radius have to be positive number");
+        //    }
+        //}
+        //while (radius <= 0);
+
+        //Console.WriteLine();
+        //double rIn = radius - thickness, rOut = radius + thickness;
+
+        //for (double y = radius; y >= -radius; --y)
+        //{
+        //    for (double x = -radius; x < rOut; x += 0.5)
+        //    {
+        //        double value = x * x + y * y;
+        //        if (value >= rIn * rIn && value <= rOut * rOut)
+        //        {
+        //            Console.Write(symbol);
+        //        }
+        //        else
+        //        {
+        //            Console.Write(" ");
+        //        }
+        //    }
+        //    Console.WriteLine();
+        //}
+        //Console.ReadKey();
+        #endregion
+
+        #region Sayı Kaç Basamaklı
+        //Console.Write("Bir sayi giriniz: ");
+        //int sayi = Convert.ToInt32(Console.ReadLine());
+        //int sayac = 0;
+        //while (sayi > 0)
+        //{
+        //    sayi /= 10;
+        //    sayac++;
+        //}
+        //Console.WriteLine("Girdiginiz sayi " + sayac + " basamaklıdır.");
+        #endregion
+
+        #region Armstrong
+        //Console.WriteLine("Please enter your number that you want to test (a number should be three digit number)");
+        //int a = Convert.ToInt32(Console.ReadLine());
+
+        //if (Basamak(a) == true)
+        //{
+
+        //    double hundreds = a / 100;
+        //    Math.Floor(hundreds);
+        //    //Console.WriteLine(hundreds);
+        //    double tens = Math.Floor((a - (hundreds * 100)) / 10);
+        //    //Console.WriteLine(Math.Floor(tens));
+        //    double ones = (a - (hundreds * 100) - (Math.Floor(tens) * 10));
+        //    //Console.WriteLine(ones);
+
+        //    if (a == ((hundreds * hundreds * hundreds) + (tens * tens * tens) + (ones * ones * ones)))
+        //    {
+        //        Console.WriteLine("this is an armstrong number");
+        //    }
+        //    else
+        //    {
+        //        Console.WriteLine("it is not an armstrong number");
+        //    }
+        //}
+        //else
+        //{
+        //    Console.WriteLine("number has more 3 digits");
+        //}
+
+        #endregion
+
+        #region Pallindrome
+
+        //Console.WriteLine("Enter your word that you want to test: ");
+        //string pal = Console.ReadLine();
+
+        //char[] charArray = pal.ToCharArray();
+        //Array.Reverse(charArray);
+        //string palrev = new string(charArray);
+        //Console.WriteLine(palrev);
+
+        //if (pal == palrev)
+        //{
+        //    Console.WriteLine("it is palindrome");
+        //}
+        //else
+        //{
+        //    Console.WriteLine("it is not");
+        //}
+        #endregion
+
+        #region Second Biggest number in array
+
+        //int[] myArray = {1, 2, 7 , 8, 5,6,9,3};
+        //int largest = 0;
+        //int secondLargest = 0;
+
+        //for(int i = 0; i < myArray.Length; i++)
+        //{
+        //    if(myArray[i] > largest)
+        //    {
+        //        largest = myArray[i];
+        //    }
+        //}
+        //myArray = myArray.Where(x => x != largest).ToArray(); // Diziden eleman çıkarma.
+
+        //for(int i = 0; i < myArray.Length; i++)
+        //{
+        //    if (myArray[i] > secondLargest)
+        //    {
+        //        secondLargest = myArray[i];
+        //    }
+        //}
+        //Console.WriteLine("------------");
+        //Console.WriteLine(secondLargest);
+        
+        #endregion 
+
     }
     #region EBebek method
-    static void raise(double salary, int hiringYear, int workingHours)
-    {
+    //static void raise(double salary, int hiringYear, int workingHours)
+    //{
 
 
-        DateTime nowYear = DateTime.Now;
-        int a = nowYear.Year;
+    //    DateTime nowYear = DateTime.Now;
+    //    int a = nowYear.Year;
 
-        int workingYear = a - hiringYear;
+    //    int workingYear = a - hiringYear;
 
-        if (workingYear == 0 && workingYear <= 5)
-        {
-            salary = salary * 1.1;
-            Console.WriteLine("This is your new salary {0}", salary + bonus(workingHours));
-        }
-        else if (workingYear > 5 && workingYear <= 10)
-        {
-            salary = salary * 1.3;
-            Console.WriteLine("This is your new salary {0}", salary + bonus(workingHours));
-        }
-        else if (workingYear > 10) ;
-        {
-            salary = salary * 1.6;
-            Console.WriteLine("This is your new salary {0}", salary + bonus(workingHours));
-        }
-    }
-    static int bonus(int workingHours)
-    {
-        int prim;
-        if (workingHours == 0 && workingHours <= 45)
-        {
-            prim = 0;
-            Console.WriteLine("priminiz {0} tl'dir", prim);
-        }
-        else
-        {
-            prim = (workingHours - 45) * 30;
-            Console.WriteLine("priminiz {0} tl'dir", prim);
-        }
-        return prim;
-    }
+    //    if (workingYear == 0 && workingYear <= 5)
+    //    {
+    //        salary = salary * 1.1;
+    //        Console.WriteLine("This is your new salary {0}", salary + bonus(workingHours));
+    //    }
+    //    else if (workingYear > 5 && workingYear <= 10)
+    //    {
+    //        salary = salary * 1.3;
+    //        Console.WriteLine("This is your new salary {0}", salary + bonus(workingHours));
+    //    }
+    //    else if (workingYear > 10) ;
+    //    {
+    //        salary = salary * 1.6;
+    //        Console.WriteLine("This is your new salary {0}", salary + bonus(workingHours));
+    //    }
+    //}
+    //static int bonus(int workingHours)
+    //{
+    //    int prim;
+    //    if (workingHours == 0 && workingHours <= 45)
+    //    {
+    //        prim = 0;
+    //        Console.WriteLine("priminiz {0} tl'dir", prim);
+    //    }
+    //    else
+    //    {
+    //        prim = (workingHours - 45) * 30;
+    //        Console.WriteLine("priminiz {0} tl'dir", prim);
+    //    }
+    //    return prim;
+    //}
     #endregion
     #region DersProgramı metod
     //static string tekrarla(int sayi, string karakter)
@@ -768,6 +938,33 @@
     //        yazi += karakter;
     //    }
     //    return yazi;
+    //}
+    #endregion
+
+    #region Armstrong Metod
+
+    //public static bool Basamak(int sayi)
+    //{
+
+    //    int sayac = 0;
+    //    while (sayi > 0)
+    //    {
+    //        sayi /= 10;
+    //        sayac++;
+
+    //    }
+
+    //    if (sayac == 3)
+    //    {
+
+    //        return true;
+    //    }
+    //    else
+    //    {
+
+    //        return false;
+    //    }
+
     //}
     #endregion
 }
