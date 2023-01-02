@@ -275,17 +275,17 @@
     //    int choice;
     //    Console.WriteLine("enter your type of connection: \n 1 for series \t 2 for parallel");
     //    choice = Convert.ToInt32(Console.ReadLine());
-    //    switch(choice)
+    //    switch (choice)
     //    {
     //        case 1:
     //            double sum = resistances[0] + resistances[1] + resistances[2];
 
-    //            Console.WriteLine("your total resistance is {0}", Math.Round(sum,2));
+    //            Console.WriteLine("your total resistance is {0}", Math.Round(sum, 2));
     //            break;
     //        case 2:
-    //            double sum2 = 1/((1/resistances[0]) + (1/resistances[1])+ (1/resistances[2]));
+    //            double sum2 = 1 / ((1 / resistances[0]) + (1 / resistances[1]) + (1 / resistances[2]));
 
-    //            Console.WriteLine("your total resistance is {0}", Math.Round(sum2,2));
+    //            Console.WriteLine("your total resistance is {0}", Math.Round(sum2, 2));
     //            break;
     //        default:
     //            Console.WriteLine("your value is not exist at the choice");
@@ -300,11 +300,11 @@
     #region 50 den büyük sayıların toplamı ( List - array )
     //static void Main(string[] args)
     //{
-      
+
     //    int[] array = new int[10];
     //    List<int> list = new List<int>();
-        
-        
+
+
     //    for (int i = 0; i < array.Length; i++)
     //    {
     //        Console.WriteLine($"Lütfen {i+1}. sayıyı giriniz. ");
@@ -312,10 +312,10 @@
     //        if (array[i] >= 50)
     //        {
     //            list.Add(array[i]);
-                
+
     //        }
     //    }
-        
+
     //    for(int i = 0; i < array.Length; i++)
     //    {
     //        Console.Write(array[i] + "\t");
@@ -747,14 +747,45 @@
         #endregion
 
         #region Üçgen Çizdirme ( EŞkenar ) 
-        //for (int i = 0; i < 20; i++)
+        //Console.WriteLine("Üçgenin boyutunu giriniz:  ");
+        //int n = int.Parse(Console.ReadLine());
+        //string start = new string(' ', n+1);
+        //Console.WriteLine(start + "*");
+        //for (int i = 0; i < n; i++)
         //{
-        //    string startspace = new string(' ', 20-i);
+        //    string startspace = new string(' ', n - i);
+        //    string endLine = new string('*', ((2*n)+3));
         //    string space = new String(' ', i);
-        //    Console.WriteLine(startspace +  "*" + space + space + "*");
+        //    Console.WriteLine(startspace + "*" + space + "*" + space + "*");
+        //    if (i == n-1)
+        //    {
+        //        Console.Write(endLine);
+        //    }
+
         //}
-        //string endLine = new string('*', 40);
-        //Console.Write(endLine);
+
+        #endregion
+
+        #region Üçgen 2
+
+        //int size = 21;
+
+        //for (int i = 0; i < size; i += 2)
+        //{
+        //    for (int j = 0; j < size; j++)
+        //    {
+        //        if (i == size -1 || i  == j || (i  + j) == (size-1)/2)
+        //        {
+        //            Console.Write("* ");
+        //        }
+        //        else
+        //        {
+        //            Console.Write("  ");
+        //        }
+        //    }
+        //    Console.WriteLine();
+        //}
+
         #endregion
 
         #region Daire
@@ -883,10 +914,59 @@
         //}
         //Console.WriteLine("------------");
         //Console.WriteLine(secondLargest);
-        
-        #endregion 
 
+        #endregion
+
+        #region Word Counter
+
+        //harfSay(Console.ReadLine(),int.Parse(Console.ReadLine()));
+
+        #endregion
+
+        int sayac = 0;
+        int[] mahkumlar = new int[21];
+        for(int i = 0; i < mahkumlar.Length; i++)
+        {
+            mahkumlar[i] = i + 1;
+        }
+        for(int i = 0; i < mahkumlar.Length-2; i++)
+        {
+            if (mahkumlar[i] != 0)
+            {
+                sayac++;
+                if (sayac == 3)
+                {
+                    mahkumlar[i] = 0;
+                }
+            }
+
+        }
     }
+
+    #region Word Counter Method
+    //private static void harfSay(string cumle,int sayac2)
+    //{
+    //    if (sayac2 > 0)
+    //    {
+    //        if (!string.IsNullOrWhiteSpace(cumle))
+    //        {
+    //            int sayac = cumle.Length;
+    //            string harf = cumle.Substring(0, 1);
+    //            cumle = cumle.Replace(harf, "");
+    //            sayac -= cumle.Length;
+    //            Console.WriteLine($"{harf} -> {sayac} Adet");
+    //            harfSay(cumle,sayac2);
+    //        }
+    //        else if(sayac2>0)
+    //        {
+    //            sayac2--;
+    //            harfSay(Console.ReadLine(),sayac2);
+    //        }
+    //    }
+        
+    //}
+    #endregion
+
     #region EBebek method
     //static void raise(double salary, int hiringYear, int workingHours)
     //{
@@ -929,6 +1009,7 @@
     //    return prim;
     //}
     #endregion
+
     #region DersProgramı metod
     //static string tekrarla(int sayi, string karakter)
     //{
