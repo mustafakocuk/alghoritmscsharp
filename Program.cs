@@ -1,4 +1,6 @@
-﻿class TestClass
+﻿using System.Linq.Expressions;
+
+class TestClass
 {
     #region Basic Name Surname
 
@@ -923,24 +925,92 @@
 
         #endregion
 
-        int sayac = 0;
-        int[] mahkumlar = new int[21];
-        for(int i = 0; i < mahkumlar.Length; i++)
-        {
-            mahkumlar[i] = i + 1;
-        }
-        for(int i = 0; i < mahkumlar.Length-2; i++)
-        {
-            if (mahkumlar[i] != 0)
-            {
-                sayac++;
-                if (sayac == 3)
-                {
-                    mahkumlar[i] = 0;
-                }
-            }
+        #region Odd - Even number finder
+        //Console.WriteLine("Tek sayılardan oluşan listenizin uzunluğunu giriniz: ");
+        //int a = int.Parse(Console.ReadLine());
+        //int[] yourArray = new int[a];
+        //for(int j = 0; j < yourArray.Length; j++)
+        //{
+        //    Console.WriteLine("Listenizin {0} elemanını giriniz: ", j+1);
+        //    yourArray[j] = int.Parse(Console.ReadLine());
 
-        }
+        //}
+        //Array.Sort(yourArray);
+        //List<int> list = new List<int>();
+        ////int test;
+        //int sayac = 0;
+        //for(int i = yourArray[0]; i < yourArray[a-1] ; i += 2)
+        //{
+        //    //test = i;
+        //    if (!yourArray.Contains(i))
+        //    {
+        //        list.Add(i);
+        //    }
+        //}
+
+        //for (int k = 0; k < list.Count(); k++)
+        //{
+        //    Console.WriteLine(list[k]);
+        //}
+
+        #endregion
+
+        #region int to binary
+
+        //Console.WriteLine("please enter your number that you want to convert int to binary: ");
+        //int bölüm = int.Parse(Console.ReadLine());
+        //int kalan;
+
+        //List<int> list = new List<int>();
+
+
+        //while (bölüm != 1)
+        //{
+        //    kalan = (bölüm % 2);
+        //    list.Add(kalan);
+        //    bölüm = bölüm / 2;        
+        //}
+
+        //list.Reverse();
+        //list.Insert(0, 1);
+        //for(int i = 0; i < list.Count(); i++)
+        //{
+        //    Console.Write(list[i]);
+        //}
+
+        #endregion
+
+        #region binary to int hileli
+
+        //Console.WriteLine("Write a number that you want to convert binary to int: ");
+        //string a = Console.ReadLine();
+
+        //List<int> list = new List<int>();
+
+        //for(int i = 0; i < a.Length; i++)
+        //{
+        //    int b = Convert.ToInt32(a[i]);
+        //    list.Add(b-48);
+        //}
+
+
+        //list.Reverse();
+        //double toplam = 0;
+        //for (int i = 0; i < a.Length; i++)
+        //{
+            
+        //    toplam += list[i] * Math.Pow(2, i);
+        //}
+        //Console.WriteLine(toplam);
+
+        #endregion
+
+
+
+
+
+
+
     }
 
     #region Word Counter Method
@@ -963,7 +1033,7 @@
     //            harfSay(Console.ReadLine(),sayac2);
     //        }
     //    }
-        
+
     //}
     #endregion
 
