@@ -1,4 +1,5 @@
-﻿using System.Linq.Expressions;
+﻿using System.Globalization;
+using System.Linq.Expressions;
 
 class TestClass
 {
@@ -998,20 +999,124 @@ class TestClass
         //double toplam = 0;
         //for (int i = 0; i < a.Length; i++)
         //{
-            
+
         //    toplam += list[i] * Math.Pow(2, i);
         //}
         //Console.WriteLine(toplam);
 
         #endregion
 
+        #region Remove even integers from an array ( with method)
+
+        //List<int> arr = new List<int>();   
+        //Console.WriteLine("Before remove even: ");
+        //for (int i = 0; i < 10; i++)
+        //{
+        //    arr.Add(i);  // assignign values
+        //    Console.WriteLine(arr[i] + "");
+        //}
+        //Console.WriteLine("");
+        //arr = removeEven(arr, 10); // calling removeEven
+        //Console.WriteLine("After remove even: ");
+        //for (var i = 0; i < 5; i++)
+        //{
+        //    Console.WriteLine(arr[i] + ""); // printing array
+        //}
+        //Console.WriteLine("");
+        //return;
 
 
+        #endregion
 
+        #region Remove Duplicates from List
 
+        //Console.WriteLine("---------------------------"); 
+        //List<int> list = new List<int>() { 7,14,21,14,7,14,7};
+        //removeDuplicate(list);
+
+        #endregion
+
+        #region another type of pallindrome
+        //string a = "kelek";
+        //bool b = false;
+        //for(int i = 0; i < a.Length; i++)
+        //{
+        //    if(a[i] == a[(a.Length-1) - i])
+        //    {
+        //        b = true;
+        //    }
+        //    else
+        //    {
+        //        b = false;
+        //        break;
+        //    }
+        //}
+
+        //if (b == false)
+        //{
+        //    Console.WriteLine("bir palindrome değildir");
+        //}
+        //else if( b == true)
+        //{
+        //    Console.WriteLine("palindrome kelime"); 
+        //}
+        #endregion
+
+        #region Sorting withour sort built in method
+
+        //int[] arr = new int[] { 9,8,7,6,3,2 };
+       
+        //bool sorted = false;
+        //while (!sorted)
+        //{
+        //    sorted = true;
+        //    for (int i = 0; i < arr.Length - 1; i++)
+        //            {
+               
+        //                if (arr[i] > arr[i + 1])
+        //                {
+        //                    int temp = arr[i];
+        //                    arr[i] = arr[i + 1];
+        //                    arr[i + 1] = temp;
+        //                    sorted = false;
+        //                }
+        //            }
+        //}
+
+        
+
+        //for (int i = 0; i < arr.Length; i++)
+        //{
+        //    Console.WriteLine(arr[i]);
+        //}
+
+        #endregion
 
 
     }
+
+
+    #region Remove Duplicates from List
+
+    //public static List<int> removeDuplicate(List<int> Arr)
+    //{
+    //    for(int i = 0; i < Arr.Count; i++)
+    //    {
+    //        for(var j = i+1; j < Arr.Count; j++)
+    //        {
+    //            if (Arr[i] == Arr[j])
+    //            {
+    //                Arr.RemoveAt(j);
+    //                j--;
+    //            }
+    //        }
+    //        Console.WriteLine(Arr[i]);
+    //    }
+
+    //    return Arr;
+    //}
+
+    #endregion
 
     #region Word Counter Method
     //private static void harfSay(string cumle,int sayac2)
@@ -1090,6 +1195,27 @@ class TestClass
     //    }
     //    return yazi;
     //}
+    #endregion
+
+    #region Remove Even Metod 
+
+    //static List<int> removeEven(List<int>Arr, int size)
+    //{
+    //    int m = 0;
+    //    List<int> list = new List<int>();
+    //    for(int i = 0; i < size; i++)
+    //    {
+    //        if (Arr[i]%2 != 0)
+    //        {
+    //            list.Add(Arr[i]);
+    //            ++m;
+    //        }
+    //    }
+
+
+    //    return list;
+    //}
+
     #endregion
 
     #region Armstrong Metod
